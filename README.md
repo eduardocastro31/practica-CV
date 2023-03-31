@@ -1,0 +1,2 @@
+# practica
+carpeta de ejercicios
