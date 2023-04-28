@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.conteiner{
+    color: white;
+    background-color:black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+header{
+    padding-top: 20px;
+    text-align: center ;
+}
+header h1{
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+
+div{
+    padding: 20px;
+}
+
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*Datos personales y academicos*/
+#datos-personales {
+    align-items: center;
+    display:flex;
+    background-color: gray;
+    justify-content: space-evenly;
+    border-radius: 50px;
+    border:solid 1px;
+    
+}
+
+img{
+    border: solid 3px rgba(158, 87, 87, 0.315) ;
+    border-radius: 50%; 
+}
+
+.datos{
+    padding: 20px;
+}
+
+.datos-1 h2, .datos-2 h2{
+    display:flex;
+    justify-content: space-between;
+}
+
+p:hover {
+    translate: 4px ;
+    transition: 0.5s;
+}
+
+ul{
+    list-style:none;
+}
+
+#formacion-academica ul{
+    list-style: outside;
+}
+
+/*---Experiencias laborales---*/
+#experiencia section{
+    padding: 30px;
+}
+
+p{
+    padding-bottom: 25px;
+}
+.botones {
+    display:flex;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*---Conocimientos---*/
+#conocimientos section ul li{
+    padding: 7px;
+    list-style: disc;
+    
+}
+
+.descripcion{
+    padding-top: 50px;
+    display: flex;
+    font-size: large;
+    text-align: center;
+    justify-content: center;
+}
+
+/*---Pie de pagina---*/
+input{
+    margin: 10px;
+}
+
+.botones  a {
+    padding: 10px;
+    margin: 50px;
+    letter-spacing: 2px;
+    border-radius: 15%;
+    color:white;
+    border: solid white 0.1px;
+    font-weight: bolder;
+    text-decoration: none;
+    background-color: rgba(128, 128, 128, 0.432);
+}
+.botones a:hover{
+    background-color: rgba(128, 128, 128, 0.253);
+}
+#boton-input{
+    padding: 5px;
+    color:white;
+    border-radius: 7px;
+    background-color: rgba(128, 128, 128, 0.432);
+}
+
+#pie section{
+display: flex;
+justify-content: center;
+align-items: flex-start;
+}
+.contactar{
+    padding: 0 5rem 0;
+}
