@@ -1,12 +1,10 @@
-
-var sueldo;
-
 var searchBtn = document.getElementById("boton-input");
 var nombre = document.getElementById("nombre")
 var boton = document.getElementById("liquidacion");
 var eMail = document.getElementById("correo");
 var telefono = document.getElementById("telefono");
 var texto = document.getElementById("texto");
+var sueldo;
 
 searchBtn.addEventListener('click', function () {
     nombreEmpresa = nombre.value
