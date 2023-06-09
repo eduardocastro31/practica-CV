@@ -1,90 +1,100 @@
 body {
     margin: 0;
     padding: 0;
+
 }
-.conteiner{
+
+.conteiner {
     color: white;
-    background-color:rgb(40, 40, 100);
+    background-color: rgba(40, 40, 100, 0.959);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
-header{
+header {
     padding-top: 20px;
-    text-align: center ;
+    text-align: center;
 }
-header h1{
+
+header h1 {
     padding-bottom: 10px;
     text-decoration: none;
 }
 
-div{
+div {
     padding: 20px;
 }
 
-h1{
+h1 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 /*Datos personales y academicos*/
 #datos-personales {
     align-items: center;
-    display:flex;
+    display: flex;
     background-color: gray;
     justify-content: space-evenly;
     border-radius: 50px;
-    border:solid 1px;
-    
+    border: solid 1px;
+
 }
 
-img{
-    border: solid 3px rgba(158, 87, 87, 0.315) ;
-    border-radius: 50%; 
+img {
+    border: solid 3px rgba(158, 87, 87, 0.315);
+    border-radius: 50%;
 }
 
-.datos{
-    padding: 20px;
+.datos {
+    padding: 10px;
+    display: flex;
 }
 
-.datos-1 h2, .datos-2 h2{
-    display:flex;
+.datos-1 li,
+.datos-2 li {
+
+    font-size: x-large;
+    font-weight: bolder;
     justify-content: space-between;
+    margin-bottom: 27px;
 }
 
-p:hover {
-    translate: 4px ;
-    transition: 0.5s;
-}
-
-.datos ul{
-    list-style:none;
+.datos-1 ul,
+.datos-2 ul {
+    list-style: none;
 }
 
 /*---Experiencias laborales---*/
-#experiencia section{
+#experiencia section {
     padding: 30px;
 }
 
-p{
+p {
     padding-bottom: 25px;
 }
+
+#experiencia p:hover {
+    translate: 4px;
+    transition: 0.5s;
+}
+
 .botones {
-    display:flex;
+    display: flex;
     justify-content: center;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
 /*---Conocimientos---*/
-#conocimientos section ul li{
+#conocimientos section ul li {
     padding: 7px;
     list-style: disc;
-    
+
 }
 
-.descripcion{
+.descripcion {
     padding-top: 50px;
     display: flex;
     font-size: large;
@@ -93,36 +103,51 @@ a{
 }
 
 /*---Pie de pagina---*/
-input{
-    margin: 10px;
+label {
+    margin: 0 5px 0 15px;
 }
 
-.botones  a {
+.botones a {
     padding: 10px;
     margin: 50px;
     letter-spacing: 2px;
     border-radius: 15%;
-    color:white;
+    color: white;
     border: solid white 0.1px;
     font-weight: bolder;
     text-decoration: none;
     background-color: rgba(128, 128, 128, 0.432);
 }
-.botones a:hover{
+
+.botones a:hover {
     background-color: rgba(128, 128, 128, 0.253);
 }
-#boton-input{
+
+#boton-input {
     padding: 5px;
-    color:white;
+    color: white;
+    margin-left: 5px;
     border-radius: 7px;
     background-color: rgba(128, 128, 128, 0.432);
 }
 
-#pie section{
-display: flex;
-justify-content: center;
-align-items: flex-start;
+textarea,
+input {
+    resize: none;
+    margin-left: 5px;
+    margin-top: 4px;
+
 }
-.contactar{
-    padding: 0 5rem 0;
+
+#pie section form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#pie p {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+
 }
