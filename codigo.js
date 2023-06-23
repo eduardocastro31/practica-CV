@@ -52,7 +52,6 @@ submit.addEventListener('click', function () {
 
         dataArr.map((obj) => {
 
-            dolar = (obj.boton / 500).toFixed(2);
             ul.innerText = dataArr.indexOf(obj) + 1;
             let li1 = document.createElement('li');
             li1.innerHTML = "Empresa: " + obj.nombre;
@@ -61,9 +60,9 @@ submit.addEventListener('click', function () {
             let li3 = document.createElement("li");
             li3.innerHTML = "Sueldo : " + obj.liqui;
             let li4 = document.createElement("li")
-            li4.innerHTML = "Dolar : USSD " + (obj.liqui * 500);
+            li4.innerHTML = "Dolar : USSD " + (obj.liqui / 500);
             let li5 = document.createElement("li");
-            li5.innerHTML = "Euro : e " + (obj.liqui * 520);
+            li5.innerHTML = "Euro : e " + (obj.liqui / 520);
 
             ul.appendChild(li1);
             ul.appendChild(li2);
@@ -109,18 +108,16 @@ submit.addEventListener('click', function () {
                 console.log(dataArr);
 
                 dataArr.map((obj) => {
-                    dolar = (obj.liqui / 500).toFixed(2);
                     ul.innerText = dataArr.indexOf(obj) + 1;
-                    console.log(obj.liqui);
                     let li1 = document.createElement('li');
                     li1.innerHTML = "Empresa: " + obj.nombre;
                     let li2 = document.createElement('li');
                     li2.innerHTML = "Correo: " + obj.eMail;
                     let li3 = document.createElement("li");
                     li3.innerHTML = "Sueldo : " + obj.liqui;
-                    li4.innerHTML = "Dolar : USSD " + (obj.liqui * 500);
+                    li4.innerHTML = "Dolar : USSD " + (obj.liqui / 500);
                     let li5 = document.createElement("li");
-                    li5.innerHTML = "Euro : e " + (obj.liqui * 520);
+                    li5.innerHTML = "Euro : e " + (obj.liqui / 520);
 
                     ul.appendChild(li1);
                     ul.appendChild(li2);
