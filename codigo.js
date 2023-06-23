@@ -82,7 +82,7 @@ submit.addEventListener('click', function () {
         form.appendChild(button);
 
         button.addEventListener('click', function () {
-            console.log("hola cj");
+            
         });
 
     }
