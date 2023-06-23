@@ -115,6 +115,7 @@ submit.addEventListener('click', function () {
                     li2.innerHTML = "Correo: " + obj.eMail;
                     let li3 = document.createElement("li");
                     li3.innerHTML = "Sueldo : " + obj.liqui;
+                    let li4 = document.createElement("li");
                     li4.innerHTML = "Dolar : USSD " + (obj.liqui / 500);
                     let li5 = document.createElement("li");
                     li5.innerHTML = "Euro : e " + (obj.liqui / 520);
