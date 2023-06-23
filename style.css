@@ -1,7 +1,6 @@
 body {
     margin: 0;
     padding: 0;
-
 }
 
 .conteiner {
@@ -9,6 +8,7 @@ body {
     background-color: rgba(40, 40, 100, 0.959);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 
 
 header {
@@ -37,6 +37,7 @@ h1 {
     justify-content: space-evenly;
     border-radius: 50px;
     border: solid 1px;
+    margin: 35px 0 40px;
 
 }
 
@@ -50,8 +51,7 @@ img {
     display: flex;
 }
 
-.datos-1 li,
-.datos-2 li {
+.datos-1 li, .datos-2 li {
 
     font-size: x-large;
     font-weight: bolder;
@@ -59,8 +59,7 @@ img {
     margin-bottom: 27px;
 }
 
-.datos-1 ul,
-.datos-2 ul {
+.datos-1 ul, .datos-2 ul {
     list-style: none;
 }
 
@@ -103,6 +102,13 @@ a {
 }
 
 /*---Pie de pagina---*/
+#pie form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
 label {
     margin: 0 5px 0 15px;
 }
@@ -116,7 +122,7 @@ label {
     border: solid white 0.1px;
     font-weight: bolder;
     text-decoration: none;
-    background-color: rgba(128, 128, 128, 0.432);
+    background-color: rgba(187, 185, 185, 0.432);
 }
 
 .botones a:hover {
@@ -125,24 +131,19 @@ label {
 
 #boton-input {
     padding: 5px;
+    display: initial;
     color: white;
     margin-left: 5px;
     border-radius: 7px;
     background-color: rgba(128, 128, 128, 0.432);
 }
 
-textarea,
-input {
+textarea, input {
     resize: none;
     margin-left: 5px;
     margin-top: 4px;
 
-}
 
-#pie section form {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
 }
 
 #pie p {
