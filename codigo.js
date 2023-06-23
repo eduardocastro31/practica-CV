@@ -1,38 +1,91 @@
-var searchBtn = document.getElementById("boton-input");
+
+var form = document.querySelector("form")
+var footer = document.querySelector("footer")
+var submit = document.getElementById("boton-input");
 var nombre = document.getElementById("nombre")
 var boton = document.getElementById("liquidacion");
 var eMail = document.getElementById("correo");
 var telefono = document.getElementById("telefono");
 var texto = document.getElementById("texto");
-var sueldo;
+let dataArr = [];
 
-searchBtn.addEventListener('click', function () {
+submit.addEventListener('click', function () {
     nombreEmpresa = nombre.value
     sueldo = boton.value;
     correo = eMail.value;
     contacto = telefono.value;
     trabajo = texto.value;
 
-    const footer = document.querySelector("footer");
+
     const ul = document.createElement("ul");
-    footer.appendChild(ul);
+    const uli = document.getElementById("creado");
+    ul.id = "creado";
 
-    if (sueldo > 100000 && contacto!= 0) {
+    if (contacto == "" || correo == "") {
+        alert("COMPLETE TODOS LOS DATOS");
+    }
 
-        decorreo.push(correo);
-        deCuenta.push(sueldo);
+    if (sueldo > 100000) {
 
-        const li = document.createElement("li");
-        li.innerHTML = "<li>Empresa: " + nombreEmpresa + "</li>" + "<li>Correo:" + correo + "</li>"+"<li>Trabajo : "+trabajo+"</li>"+ "<li> Sueldo: $" + sueldo + "</li>";
-        ul.appendChild(li)
+        footer.appendChild(ul);
+
+        dataArr.push({
+            nombre: nombreEmpresa,
+            eMail: correo,
+            boton: sueldo,
+        });
+
+
+        dataArr.sort((a, b) => a.boton - b.boton);
+        dataArr.map((obj) => {
+            const li = document.createElement("li");
+
+            dolar = (obj.boton / 500).toFixed(2);
+            ul.setAttribute('style', 'list-style:none;');
+
+            ul.innerText = dataArr.indexOf(obj) + 1;
+
+            let li1 = document.createElement('li');
+            li1.innerHTML = "Empresa: " + nombreEmpresa;
+            let li2 = document.createElement('li');
+            li2.innerHTML = "Correo: " + correo;
+            let li3 = document.createElement("li");
+            li3.innerHTML = "Sueldo : " + sueldo;
+
+            ul.appendChild(li1);
+            ul.appendChild(li2);
+            ul.appendChild(li3);
+
+        });
+
+        console.log(dataArr);
+
+
+        if (document.body.contains(uli) == false) {
+            ordenar();
+        }
+
+        form.reset();
     }
 
     else {
-        console.log("Sueldo Es menor a 100 mil")
+        console.log("Sueldo ingresado menor a $100.000 o datos invalidos.")
+        form.reset();
     }
 
-    document.getElementById("correo").value = "";
-    document.getElementById("telefono").value = "";
-    document.getElementById("liquidacion").value = "";
+    function ordenar() {
+        const button = document.createElement("button");
+        button.innerHTML = "Ordenar";
+        button.id = "ordena";
+        button.className = "btn btn-warning";
+        var boton = document.getElementById("ordena");
+        form.appendChild(button);
+
+        button.addEventListener('click', function () {
+            console.log("hola cj");
+        });
+
+    }
 
 });
+
