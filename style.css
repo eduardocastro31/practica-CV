@@ -43,7 +43,7 @@ h1 {
 
 img {
     border: solid 3px rgba(158, 87, 87, 0.315);
-    border-radius: 50%;
+    border-radius: 40%;
 }
 
 .datos {
@@ -60,7 +60,9 @@ img {
 }
 
 .datos-1 ul, .datos-2 ul {
+    padding: 0;
     list-style: none;
+    text-align: center;
 }
 
 /*---Experiencias laborales---*/
