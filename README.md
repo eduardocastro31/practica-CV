@@ -1,2 +1,2 @@
-# practica
-carpeta de ejercicios
+# Mi Portfolio
+Contenido principal de mi curriculum vitae
